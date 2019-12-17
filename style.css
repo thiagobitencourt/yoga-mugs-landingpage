@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda&display=swap");
+
 :root {
   --color-white: #f8f8f8;
   --color-primary: #f95428;
@@ -11,6 +13,39 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: "Merienda", cursive;
+}
+
+#header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-bar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+#nav-bar ul li {
+  display: inline-block;
+  margin: auto 15px;
+}
+
+#header img,
+footer img {
+  width: 200px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 footer {
