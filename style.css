@@ -11,8 +11,6 @@ body {
   padding: 0;
   background-color: var(--color-white);
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-family: "Merienda", cursive;
 }
 
@@ -29,10 +27,18 @@ body {
 #header {
   background-color: var(--color-white);
   position: fixed;
+  top: 0;
   width: 100vw;
+  height: 50px;
   padding: 10px;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+#header + .container {
+  height: 70px;
 }
 
 #nav-bar ul {
@@ -59,6 +65,27 @@ a {
 
 a:hover {
   font-weight: bold;
+}
+
+img.mug {
+  max-width: 250px;
+  height: auto;
+}
+
+.mug-descriptions {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.mug-descriptions .descriptions .description .title {
+  font-weight: bold;
+}
+
+.mug-descriptions .descriptions .description .text {
+  margin-left: 20px;
 }
 
 footer {
