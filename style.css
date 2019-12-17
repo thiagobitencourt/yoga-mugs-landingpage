@@ -82,6 +82,7 @@ img.mug {
 
 .mug-descriptions .descriptions .description .title {
   font-weight: bold;
+  font-size: 20px;
 }
 
 .mug-descriptions .descriptions .description .text {
@@ -91,6 +92,15 @@ img.mug {
 section h2 {
   color: var(--color-primary);
   text-align: center;
+}
+
+section#features {
+  display: grid;
+  justify-content: center;
+}
+
+.video {
+  box-shadow: 4px 4px 5px #ccc;
 }
 
 footer {
