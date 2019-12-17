@@ -16,10 +16,23 @@ body {
   font-family: "Merienda", cursive;
 }
 
+.wrapper {
+  position: relative;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 #header {
+  background-color: var(--color-white);
+  position: fixed;
+  width: 100vw;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #nav-bar ul {
@@ -50,4 +63,10 @@ a:hover {
 
 footer {
   background-color: var(--color-primary-light);
+}
+
+@media (max-width: 700px) {
+  #header {
+    display: block;
+  }
 }
