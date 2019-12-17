@@ -88,6 +88,11 @@ img.mug {
   margin-left: 20px;
 }
 
+section h2 {
+  color: var(--color-primary);
+  text-align: center;
+}
+
 footer {
   background-color: var(--color-primary-light);
 }
