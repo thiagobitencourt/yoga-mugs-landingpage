@@ -169,7 +169,12 @@ section#features {
 }
 
 footer {
-  background-color: var(--color-primary-light);
+  text-align: center;
+  font-size: 14px;
+}
+
+.heart {
+  color: var(--color-primary);
 }
 
 @media (max-width: 700px) {
