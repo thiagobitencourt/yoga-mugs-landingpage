@@ -24,6 +24,10 @@ body {
   margin: 0 auto;
 }
 
+main section[id] {
+  margin-top: 50px;
+}
+
 #header {
   background-color: var(--color-white);
   position: fixed;
@@ -103,6 +107,55 @@ section#features {
   box-shadow: 4px 4px 5px #ccc;
 }
 
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
+  justify-items: center;
+}
+
+.price-item {
+  width: 100%;
+  box-shadow: 3px 3px 7px #ccc;
+}
+
+.price-item .price {
+  text-align: center;
+}
+
+.button {
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button.primary {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-white);
+}
+
+.button.ghost {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.button.primary:hover,
+.button.ghost:hover {
+  color: var(--color-primary);
+  background-color: var(--color-primary-light);
+}
+
+.buy-action {
+  padding: 10px 20px;
+}
+
+.buy-action .button {
+  width: 100%;
+}
+
 footer {
   background-color: var(--color-primary-light);
 }
@@ -110,5 +163,10 @@ footer {
 @media (max-width: 700px) {
   #header {
     display: block;
+    height: 70px;
+  }
+
+  #header + .container {
+    height: 90px;
   }
 }
